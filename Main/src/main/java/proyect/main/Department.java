@@ -1,9 +1,10 @@
 package proyect.main;
+import java.io.Serializable;
 
-public class Department {
+public class Department implements Serializable{
     private int ID;
     private String name;
-
+   private static final long serialVersionUID = 5378882624469897474L;  // Para consistencia
     public Department(int ID, String name) {
         this.ID = ID;
         this.name = name;

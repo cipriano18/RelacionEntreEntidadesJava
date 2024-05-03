@@ -1,10 +1,12 @@
 package proyect.main;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable{
     private String name;
     private int salary;
     private Department department;
-
+   private static final long serialVersionUID = 6641107279781048157L;  // Para consistencia
     public Employee(String name, int salary, Department department) {
         this.name = name;
         this.salary = salary;
